@@ -51,7 +51,7 @@
 ### 사전 요구사항
 - Python 3.12+
 
-### 백엔드 및 통합 배포
+### 사용 방법
 ```
 python -m venv venv
 source venv/bin/activate # Unix 또는 venv\Scripts\activate (Windows)
