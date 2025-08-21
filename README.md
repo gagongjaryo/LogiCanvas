@@ -26,7 +26,9 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - 노드 추가: 헤더 버튼 또는 캔버스 더블클릭으로 팔레트 열기 (검색 가능, vue-virtual-scroller 사용).
 - 흐름 실행: DFS 기반 순환 감지와 토폴로지 정렬 traversal로 완전한 입력-모델-출력 경로 실행.
 - 추가: 노드 그룹화/바이패스/복사/붙여넣기/삭제 키 단축키, 워크플로우 Export/Import, 동적 포트 (추가/제거, 더블클릭), Handle 스타일 커스텀 (입력: 노란색, 출력: 연한 녹색 세로선, 돌출, 그림자), 제목 편집 (✎ 아이콘), Merge 노드 입력 포트 우선순위 드래그 (vuedraggable), Condition 노드 (드래그 가능한 선택, 연산자, 값 비교).
+
 <br>
+
 - Visual node canvas using Vue Flow: Drag, resize (Resize handles, grid snap), node connection, edge double-click removal.
 - Real-time streaming AI text generation.
 - Dropdown model selection (OpenAI GPT-4.1, Google Gemini-2.5 Flash/Pro, xAI Grok-4-0709) and custom additions.
@@ -45,7 +47,9 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - openai, google-genai, xai-sdk: AI API.
 - aiohttp-cors: 프론트엔드 통합.
 - pycryptodome: API 키 복호화.
+
 <br>
+
 - aiohttp: WebSocket and server.
 - openai, google-genai, xai-sdk: AI APIs.
 - aiohttp-cors: Frontend integration.
@@ -60,7 +64,9 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - vue-virtual-scroller: 팔레트 가상 스크롤.
 - vuedraggable: Merge 노드 포트 우선순위 드래그.
 - @fortawesome/fontawesome-free: 아이콘.
+
 <br>
+
 - Vite: Build tool.
 - @vue-flow/core and @vue-flow/node-resizer: Node-based UI and resizing.
 - vue-i18n: Localization.
@@ -105,7 +111,9 @@ python main.py --serve-static # http://localhost:8080에서 앱 서빙
 - "실행" 클릭하여 AI 응답을 표시 노드로 스트리밍 (처리 중 스피너 및 그림자 효과).
 - 출력 노드에서 로그 확인, 복사 또는 다운로드.
 - 워크플로우 Export/Import 버튼으로 JSON 저장/로드.
+
 <br>
+
 - Open the app in the browser (localhost:8080).
 - Add input/file/model/merge/condition/output nodes from the header or double-click the canvas to open the palette (searchable).
 - Enter prompts in input nodes (copy/download possible), upload .txt in file nodes.
