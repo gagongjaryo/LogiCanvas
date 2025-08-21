@@ -80,7 +80,7 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 ### 사전 요구사항 / Prerequisites
 - Python 3.12+
 
-### 백엔드 및 통합 배포 / Backend and Integrated Deployment
+### 설치 / Installation
 ```cd backend_aiohttp
 python -m venv venv
 source venv/bin/activate # Unix 또는 venv\Scripts\activate (Windows)
