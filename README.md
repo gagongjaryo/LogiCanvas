@@ -4,6 +4,7 @@
 이 프로젝트는 노드 기반 데이터 흐름 애플리케이션의 프로토타입으로, 사용자가 시각적으로 노드를 연결하여 실시간 AI 텍스트를 생성할 수 있습니다. 브라우저에서 실행되는 웹 앱으로, 입력 프롬프트 노드, 파일 입력 노드, 모델 선택 노드, 합치기(Merge) 노드, 조건분기(Condition) 노드, 출력 표시 노드가 연결되어 데이터가 입력에서 모델을 거쳐 출력으로 흐릅니다. "실행" 버튼으로 AI 생성을 WebSocket을 통해 Python 백엔드로 트리거합니다.
 
 앱은 OpenAI, Google GenAI, xAI와 같은 AI API로부터 스트리밍 응답을 지원합니다. 헤더에 노드 추가 버튼이 있으며, 캔버스 더블클릭으로 노드 팔레트 열기, 입력/파일/모델/합치기/조건분기/출력 노드를 동적으로 추가할 수 있습니다. 그룹화 (Ctrl+G), 바이패스 (Ctrl+B), 복사/붙여넣기 (Ctrl+C/V, Shift+V로 연결 유지), 삭제 (Delete), Export/Import 워크플로우 기능이 구현되었습니다. 추가로 노드 제목 편집 (✎ 아이콘), 동적 포트 추가/제거 (더블클릭), 입력 포트 우선순위 드래그 (vuedraggable), 리사이즈 핸들 (그리드 스냅 지원), 핸들 스타일 커스텀 (색상 세로선, 돌출, 그림자) 등이 포함됩니다.
+
 ---
 This project is a prototype of a node-based data flow application where users can visually connect nodes to generate real-time AI text. It is a web app that runs in the browser, with input prompt nodes, file input nodes, model selection nodes, merge nodes, condition nodes, and output display nodes connected so that data flows from input through the model to output. The "Execute" button triggers AI generation via WebSocket to a Python backend.
 
@@ -24,7 +25,8 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - 노드 추가: 헤더 버튼 또는 캔버스 더블클릭으로 팔레트 열기 (검색 가능, vue-virtual-scroller 사용).
 - 흐름 실행: DFS 기반 순환 감지와 토폴로지 정렬 traversal로 완전한 입력-모델-출력 경로 실행.
 - 추가: 노드 그룹화/바이패스/복사/붙여넣기/삭제 키 단축키, 워크플로우 Export/Import, 동적 포트 (추가/제거, 더블클릭), Handle 스타일 커스텀 (입력: 노란색, 출력: 연한 녹색 세로선, 돌출, 그림자), 제목 편집 (✎ 아이콘), Merge 노드 입력 포트 우선순위 드래그 (vuedraggable), Condition 노드 (드래그 가능한 선택, 연산자, 값 비교).
-  
+
+---
 - Visual node canvas using Vue Flow: Drag, resize (Resize handles, grid snap), node connection, edge double-click removal.
 - Real-time streaming AI text generation.
 - Dropdown model selection (OpenAI GPT-4.1, Google Gemini-2.5 Flash/Pro, xAI Grok-4-0709) and custom additions.
@@ -44,6 +46,7 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - aiohttp-cors: 프론트엔드 통합.
 - pycryptodome: API 키 복호화.
 
+---
 - aiohttp: WebSocket and server.
 - openai, google-genai, xai-sdk: AI APIs.
 - aiohttp-cors: Frontend integration.
