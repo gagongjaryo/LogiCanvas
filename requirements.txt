@@ -1,0 +1,8 @@
+aiohttp==3.10.0
+aiohttp-cors==0.7.0
+openai # 버전 지정 제거: 최신 버전 설치 (1.96.0 이상, httpx 호환성 문제 해결)
+google-genai[aiohttp] # 변경: google-genai[aiohttp] 추가
+xai-sdk # 변경: xAI SDK 추가 (async 지원)
+pycryptodome # 추가: API 키 복호화
+black
+cachetools
