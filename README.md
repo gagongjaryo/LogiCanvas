@@ -4,7 +4,9 @@
 이 프로젝트는 노드 기반 데이터 흐름 애플리케이션의 프로토타입으로, 사용자가 시각적으로 노드를 연결하여 실시간 AI 텍스트를 생성할 수 있습니다. 브라우저에서 실행되는 웹 앱으로, 입력 프롬프트 노드, 파일 입력 노드, 모델 선택 노드, 합치기(Merge) 노드, 조건분기(Condition) 노드, 출력 표시 노드가 연결되어 데이터가 입력에서 모델을 거쳐 출력으로 흐릅니다. "실행" 버튼으로 AI 생성을 WebSocket을 통해 Python 백엔드로 트리거합니다.
 
 앱은 OpenAI, Google GenAI, xAI와 같은 AI API로부터 스트리밍 응답을 지원합니다. 헤더에 노드 추가 버튼이 있으며, 캔버스 더블클릭으로 노드 팔레트 열기, 입력/파일/모델/합치기/조건분기/출력 노드를 동적으로 추가할 수 있습니다. 그룹화 (Ctrl+G), 바이패스 (Ctrl+B), 복사/붙여넣기 (Ctrl+C/V, Shift+V로 연결 유지), 삭제 (Delete), Export/Import 워크플로우 기능이 구현되었습니다. 추가로 노드 제목 편집 (✎ 아이콘), 동적 포트 추가/제거 (더블클릭), 입력 포트 우선순위 드래그 (vuedraggable), 리사이즈 핸들 (그리드 스냅 지원), 핸들 스타일 커스텀 (색상 세로선, 돌출, 그림자) 등이 포함됩니다.
+
 <br>
+
 This project is a prototype of a node-based data flow application where users can visually connect nodes to generate real-time AI text. It is a web app that runs in the browser, with input prompt nodes, file input nodes, model selection nodes, merge nodes, condition nodes, and output display nodes connected so that data flows from input through the model to output. The "Execute" button triggers AI generation via WebSocket to a Python backend.
 
 The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, and xAI. There are buttons in the header to add nodes, and double-clicking the canvas opens a node palette to dynamically add input/file/model/merge/condition/output nodes. Features include grouping (Ctrl+G), bypassing (Ctrl+B), copy/paste (Ctrl+C/V, Shift+V to keep connections), deletion (Delete), and Export/Import workflow. Additionally, it includes node title editing (✎ icon), dynamic port addition/removal (double-click), input port priority dragging (vuedraggable), resize handles (with grid snap support), and custom handle styles (colored vertical lines, protrusions, shadows).
