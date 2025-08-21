@@ -69,24 +69,24 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - @fortawesome/fontawesome-free: Icons.
 
 ## 폴더 구조 / Folder Structure
-@@@project_root/
+```project_root/
 ├── readme.md
 ├── requirements.txt
 ├── main.py
 └── dist/ (빌드된 프론트엔드 정적 파일)
-@@@
+```
 
 ## 설치 및 설정 / Installation and Setup
 ### 사전 요구사항 / Prerequisites
 - Python 3.12+
 
 ### 백엔드 및 통합 배포 / Backend and Integrated Deployment
-@@@cd backend_aiohttp
+```cd backend_aiohttp
 python -m venv venv
 source venv/bin/activate # Unix 또는 venv\Scripts\activate (Windows)
 pip install -r requirements.txt
 python main.py --serve-static # http://localhost:8080에서 앱 서빙
-@@@
+```
 
 ## 사용법 / Usage
 - 브라우저에서 앱 열기 (localhost:8080).
