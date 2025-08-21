@@ -73,7 +73,7 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 ├── readme.md
 ├── requirements.txt
 ├── main.py
-└── dist/ (빌드된 프론트엔드 정적 파일)
+└── static/ (빌드된 프론트엔드 정적 파일)
 ```
 
 ## 설치 및 설정 / Installation and Setup
