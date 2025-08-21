@@ -389,4 +389,4 @@ if args.serve_static:
         logger.warning("dist 폴더가 없음, static 서빙 비활성화")
 port = int(os.environ.get("PORT", 8080))
 if __name__ == "__main__":
-    web.run_app(app, host="0.0.0.0", port=port)
+    web.run_app(app, host="127.0.0.1", port=port)
