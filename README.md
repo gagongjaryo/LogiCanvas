@@ -104,6 +104,8 @@ python main.py --serve-static # http://localhost:8080에서 앱 서빙
 - 출력 노드에서 로그 확인, 복사 또는 다운로드.
 - 워크플로우 Export/Import 버튼으로 JSON 저장/로드.
 
+
+
 - Open the app in the browser (localhost:8080).
 - Add input/file/model/merge/condition/output nodes from the header or double-click the canvas to open the palette (searchable).
 - Enter prompts in input nodes (copy/download possible), upload .txt in file nodes.
