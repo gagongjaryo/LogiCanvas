@@ -77,7 +77,8 @@ The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, 
 - @fortawesome/fontawesome-free: Icons.
 
 ## 폴더 구조 / Folder Structure
-```project_root/
+```
+project_root/
 ├── readme.md
 ├── requirements.txt
 ├── main.py
