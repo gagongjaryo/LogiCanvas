@@ -90,7 +90,8 @@ project_root/
 - Python 3.12+
 
 ### 설치 / Installation
-```cd backend_aiohttp
+```
+cd backend_aiohttp
 python -m venv venv
 source venv/bin/activate # Unix 또는 venv\Scripts\activate (Windows)
 pip install -r requirements.txt
