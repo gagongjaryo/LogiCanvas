@@ -12,7 +12,7 @@ This project is a prototype of a node-based data flow application where users ca
 The app supports streaming responses from AI APIs such as OpenAI, Google GenAI, and xAI. There are buttons in the header to add nodes, and double-clicking the canvas opens a node palette to dynamically add input/file/model/merge/condition/output nodes. Features include grouping (Ctrl+G), bypassing (Ctrl+B), copy/paste (Ctrl+C/V, Shift+V to keep connections), deletion (Delete), and Export/Import workflow. Additionally, it includes node title editing (✎ icon), dynamic port addition/removal (double-click), input port priority dragging (vuedraggable), resize handles (with grid snap support), and custom handle styles (colored vertical lines, protrusions, shadows).
 
 ## 스크린샷 / screenshot
-![스크린샷](screenshot.png)
+![스크린샷](https://gagongjaryo.github.io/LogiCanvas/screenshot.png)
 
 ## 주요 기능 / Key Features
 - Vue Flow를 사용한 시각적 노드 캔버스: 드래그, 크기 조정 (Resize 핸들, 그리드 스냅), 노드 연결, 엣지 더블클릭 제거.
