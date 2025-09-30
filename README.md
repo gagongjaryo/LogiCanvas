@@ -111,7 +111,7 @@ cd LogiCanvas && python3 -m venv venv && source venv/bin/activate && pip install
 또는
 
 ```bash
-cd LogiCanvas && python -m venv venv && venv\Scripts\activate && pip install -r requirements.txt && python main.py
+cd LogiCanvas && python -m venv venv && call venv\Scripts\activate && python -m pip install --upgrade pip && pip install -r requirements.txt && python main.py
 ```
 
 
