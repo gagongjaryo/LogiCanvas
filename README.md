@@ -99,19 +99,36 @@ python -m venv venv
 source venv/bin/activate # Unix 또는 venv\Scripts\activate (Windows)
 pip install -r requirements.txt
 python main.py # http://localhost:8080에서 앱 서빙
-
 ```
 
-또는
+
+
+#### 첫실행
+
+맥
 
 ```bash
 cd LogiCanvas && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt && python main.py
 ```
 
-또는
+윈도우
 
 ```bash
 cd LogiCanvas && python -m venv venv && call venv\Scripts\activate && python -m pip install --upgrade pip && pip install -r requirements.txt && python main.py
+```
+
+#### 재실행
+
+맥
+
+```bash
+cd LogiCanvas && source venv/bin/activate && python main.py
+```
+
+윈도우
+
+```bash
+cd LogiCanvas && call venv\Scripts\activate && python main.py
 ```
 
 
